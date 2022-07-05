@@ -103,7 +103,7 @@ main {
 .close {
 	position: absolute;
 	top: 10px;
-	right: 25%;
+	right: 2%;
 }
 
 #fondo-galeria {
@@ -173,7 +173,18 @@ footer {
 	}
 }
 @media screen and (max-width: 600px) {
+	#galeria-oculta {
+		max-width: 400px;
+	}
 	
+	.fraccion-galeria {
+		min-width: 400px;
+	}
+	
+	.close {
+		top: 50px;
+		right: 5%
+	}
 	
 	footer{
 		position: static;
