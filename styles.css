@@ -107,7 +107,7 @@ main {
 
 .imagen-grande {
 	width: 100%;
-	min-width: 1350px;
+	min-width: 1370px;
 	height: 100vh;
 	justify-content: flex-end;
 	background-repeat: no-repeat;
@@ -154,7 +154,7 @@ footer {
 	}
 	
 	.imagen-grande {
-		min-width: 900px;
+		min-width: 910px;
 	}
 }
 
@@ -164,7 +164,7 @@ footer {
 	}
 	
 	.imagen-grande {
-		min-width: 500px;
+		min-width: 510px;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -173,7 +173,7 @@ footer {
 	}
 	
 	.imagen-grande {
-		min-width: 300px;
+		min-width: 310px;
 		height: 80vh;
 	}
 	
