@@ -46,6 +46,11 @@ header ul {
 	box-sizing: border-box;
 }
 
+header a:hover {
+	background-color: #F8F8F8;
+	color: #2B4937;
+	font-weight: 600;
+}
 /*------MAIN-------*/
 
 main {
