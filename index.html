@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Prueba de galer&iacute;a 2</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+		</script>
+	</head>
+
+	<body>
+		
+		<header class="flex">
+			<h1>Experimentando una galer&iacute;a</h1>
+			<ul class="flex">
+				<li><a href="#">B&aacute;sica</a></li>
+				<li><a href="#">Con animaciones</a></li>
+				<li><a href="#">Alternativa</a></li>
+			</ul>
+		</header>
+		<main class="flex">
+			<section id="miniaturas" class="flex">
+				<a href="#foto-1"><img src="img/hobbie-1-thumbnail.jpg" alt="Gorrión" width="200px" height="200px" onClick="mostrarGaleria()"></a>
+				<a href="#foto-2"><img src="img/hobbie-11-thumbnail.jpg" width="200px" height="200px" alt="Lechuza" onClick="mostrarGaleria()"></a>
+				<a href="#foto-3"><img src="img/hobbie-7-thumbnail.jpg" width="200px" height="200px" alt="Teyú" onClick="mostrarGaleria()"></a>
+			</section>
+			<!--Comienzo de galería oculta-->
+			<section id="galeria">
+				<div id="fondo-galeria"></div>
+				<ul id="galeria-oculta" class="flex">
+					<li class="fraccion-galeria flex" id="foto-1">
+						<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+						<div class="imagen-grande flex" id="gorrion">
+							<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+						</div>
+						<a href="#foto-2"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+					</li>
+					<li class="fraccion-galeria flex" id="foto-2">
+						<a href="#foto-1"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+						<div class="imagen-grande flex" id="lechuza">
+							<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+						</div>
+						<a href="#foto-3"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+					</li>
+					<li class="fraccion-galeria flex" id="foto-3">
+						<a href="#foto-2"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+						<div class="imagen-grande flex" id="teyu">
+							<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+						</div>
+						<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+					</li>
+				</ul>
+			</section>
+			<!--Fin de galería oculta-->
+		</main>
+		<footer class="flex">
+			<p>Fotograf&iacute;as by Aim&eacute; Albornoz - Computaci&oacute;n III - UNLa</p>
+			<img src="img/logo-catedra.png" alt="C&aacute;tedra Wisñevsky" width="100px" height="28px">
+		</footer>
+	</body>
+</html>

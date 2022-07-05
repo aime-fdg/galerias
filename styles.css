@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Source+Code+Pro&display=swap');
+
+/*------GENERAL-------*/
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	background-color: #F8F8F8;
+	font-family: "Source Code Pro", monospace;
+}
+
+a {
+	color: #F8F8F8;
+}
+
+.flex {
+	display: flex;
+}
+
+/*------HEADER-------*/
+header {
+	background-color: #2B4937;
+	color: #F8F8F8;
+	flex-direction: column;
+	align-items: center;
+}
+h1 {
+	font-family: "Berkshire Swash", script;
+	width: 100%;
+	text-align: center;
+	font-size: 3em;
+	padding-top: 50px;
+}
+
+header ul {
+	width: 20%;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+/*------MAIN-------*/
+
+main {
+	justify-content: center;
+}
+
+#miniaturas {
+	width: 80%;
+	justify-content: space-evenly;
+	list-style: none;
+	padding-top: 100px;
+}
+
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+	/*background-color: #000000;*/
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+#galeria-oculta {
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.fraccion-galeria {
+	align-items: center;
+}
+
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+
+.close {
+	mix-blend-mode: plus-lighter;
+}
+
+#fondo-galeria {
+	background-color: black;
+	opacity: 0.9;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+}
+
+/*------CONTENEDOR DE LAS IMÁGENES-------*/
+
+.imagen-grande {
+	width: 100%;
+	min-width: 1350px;
+	height: 100%;
+	min-height: 900px;
+	justify-content: flex-end;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
+
+#gorrion {
+	background-image: url("img/hobbie-1.jpg");
+}
+
+#cuyo {
+	background-image: url("img/hobbie-2.jpg")
+}
+
+#teyu {
+	background-image: url("img/hobbie-7.jpg")
+}
+
+#lechuza {
+	background-image:url("img/hobbie-11.jpg");
+}
+
+/*------FOOTER-------*/
+
+footer {
+	position: fixed;
+	z-index: 0;
+	color: #F8F8F8;
+	background-color: #1A1A1A;
+	bottom: 0;
+	width: 100%;
+	justify-content: space-around;
+	padding: 20px;
+}
