@@ -83,14 +83,27 @@ main {
 
 .fraccion-galeria {
 	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
 }
 
 .primer-ultima-flecha {
 	visibility: hidden;
 }
 
-.close {
+.flecha, .close {
 	mix-blend-mode: plus-lighter;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 25%;
 }
 
 #fondo-galeria {
@@ -103,33 +116,15 @@ main {
 	z-index: 0;
 }
 
-/*------CONTENEDOR DE LAS IMÁGENES-------*/
-
-.imagen-grande {
-	width: 100%;
-	min-width: 1370px;
-	height: 100vh;
-	justify-content: flex-end;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-}
-
-/*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
-
-#gorrion {
+#foto-1-gorrion {
 	background-image: url("img/hobbie-1.jpg");
 }
 
-#cuyo {
-	background-image: url("img/hobbie-2.jpg")
-}
-
-#teyu {
+#foto-3-teyu {
 	background-image: url("img/hobbie-7.jpg")
 }
 
-#lechuza {
+#foto-2-lechuza {
 	background-image:url("img/hobbie-11.jpg");
 }
 
@@ -150,11 +145,16 @@ footer {
 
 @media screen and (max-width: 1440px) {
 	#galeria-oculta {
-		max-width: 1000px;
+		max-width: 1024px;
 	}
 	
-	.imagen-grande {
-		min-width: 910px;
+	.fraccion-galeria {
+		min-width: 1024px;
+	}
+	
+	.close {
+		top: 50px;
+		right: 15%
 	}
 }
 
@@ -163,19 +163,17 @@ footer {
 		max-width: 600px;
 	}
 	
-	.imagen-grande {
-		min-width: 510px;
+	.fraccion-galeria {
+		min-width: 600px;
+	}
+	
+	.close {
+		top: 50px;
+		right: 5%
 	}
 }
 @media screen and (max-width: 600px) {
-	#galeria-oculta {
-		max-width: 400px;
-	}
 	
-	.imagen-grande {
-		min-width: 310px;
-		height: 80vh;
-	}
 	
 	footer{
 		position: static;
