@@ -69,7 +69,6 @@ main {
 	width: 100%;
 	justify-content: center;
 	height: 100vh;
-	/*background-color: #000000;*/
 	position: absolute;
 	top: 0;
 	z-index: 10;
@@ -173,5 +172,9 @@ footer {
 	
 	.imagen-grande {
 		min-width: 300px;
+	}
+	
+	footer{
+		position: static;
 	}
 }
