@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Galería con animaciónes</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+		</script>
+	</head>
+
+	<body>
+		<header class="flex">
+			<h1>Experimentando una galer&iacute;a</h1>
+			<ul class="flex">
+				<li><a href="index.html">B&aacute;sica</a></li>
+				<li><a href="#">Con animaciones</a></li>
+				<li><a href="#">Alternativa</a></li>
+			</ul>
+		</header>
+		<footer class="flex">
+			<p>Fotograf&iacute;as by Aim&eacute; Albornoz - Computaci&oacute;n III - UNLa</p>
+			<img src="img/logo-catedra.png" alt="C&aacute;tedra Wisñevsky" width="100px" height="28px">
+		</footer>
+	</body>
+</html>
