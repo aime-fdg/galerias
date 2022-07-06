@@ -26,9 +26,42 @@
 			<ul class="flex">
 				<li><a href="index.html">B&aacute;sica</a></li>
 				<li><a href="con-animaciones.html">Con animaciones</a></li>
-				<li><a href="#">Alternativa</a></li>
+				<li><a href="alternativa.html">Alternativa</a></li>
 			</ul>
 		</header>
+		<main class="flex">
+			<section id="miniaturas" class="flex">
+				<a href="#foto-1-gorrion"><img src="img/hobbie-1-thumbnail.jpg" alt="Gorrión" width="200px" height="200px" onClick="mostrarGaleria()"></a>
+				<a href="#foto-2-lechuza"><img src="img/hobbie-11-thumbnail.jpg" width="200px" height="200px" alt="Buho" onClick="mostrarGaleria()"></a>
+				<a href="#foto-3-teyu"><img src="img/hobbie-7-thumbnail.jpg" width="200px" height="200px" alt="Teyú" onClick="mostrarGaleria()"></a>
+			</section>
+			<!--Comienzo de galería oculta-->
+			<section id="galeria">
+				<div id="fondo-galeria"></div>
+				<ul id="galeria-oculta" class="flex">
+					<li class="fraccion-galeria flex" id="foto-1-gorrion">
+						<a href="#" class="primer-ultima-flecha"><img class="flecha" src="img/back.svg" width="40px" height="40px" alt="Anterior"></a>
+						<p class="caption">Gorri&oacute;n dom&eacute;stico camuflado en su h&aacute;bitat natural, el tejado del vecino, 2016.</p>
+						<img class="close" src="img/close.svg" alt="Cerrar" width="40px" height="40px" onClick="ocultarGaleria()">
+						<a href="#foto-2-lechuza"><img class="flecha" src="img/next.svg" width="40px" height="40px" alt="Siguiente"></a>
+					</li>
+					<li class="fraccion-galeria flex" id="foto-2-lechuza">
+						<a href="#foto-1-gorrion"><img class="flecha" src="img/back.svg" width="40px" height="40px" alt="Anterior"></a>
+						<p class="caption">Buho juzgando a los que tiran basura en su casa, Mar del Plata 2020</p>
+						<img class="close" src="img/close.svg" alt="Cerrar" width="40px" height="40px" onClick="ocultarGaleria()">
+						<a href="#foto-3-teyu"><img class="flecha" src="img/next.svg" width="40px" height="40px" alt="Siguiente"></a>
+					</li>
+					<li class="fraccion-galeria flex" id="foto-3-teyu">
+						<a href="#foto-2-lechuza"><img class="flecha" src="img/back.svg" width="40px" height="40px" alt="Anterior"></a>
+						<p class="caption">Tey&uacute;-taragü&iacute;, lagartija avistada en las Ruinas Jesu&iacute;tico-Guaran&iacute;es de San Ignacio Mini, 2017</p>
+						<img class="close" src="img/close.svg" alt="Cerrar" width="40px" height="40px" onClick="ocultarGaleria()">
+						<a href="#" class="primer-ultima-flecha"><img class="flecha" src="img/next.svg" width="40px" height="40px" alt="Siguiente"></a>
+					</li>
+				</ul>
+			</section>
+			<!--Fin de galería oculta-->
+			
+		</main>
 		<footer class="flex">
 			<p>Fotograf&iacute;as by Aim&eacute; Albornoz - Computaci&oacute;n III - UNLa</p>
 			<img src="img/logo-catedra.png" alt="C&aacute;tedra Wisñevsky" width="100px" height="28px">
