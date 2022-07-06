@@ -1,3 +1,151 @@
 @charset "utf-8";
 /* CSS Document */
 
+main {
+	justify-content: center;
+}
+
+#miniaturas {
+	width: 60%;
+	justify-content: center;
+	list-style: none;
+	margin-top: 100px;
+	flex-wrap: wrap;
+	padding: 50px 0;
+	border-radius: 25px;
+	background-color: #2B4937;
+}
+
+#miniaturas a {
+	margin: 1%;
+	border-color: #F8F8F8;
+	border: solid 10px;
+	height: 200px;
+}
+
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+#galeria-oculta {
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.fraccion-galeria {
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.caption {
+	align-self: flex-end;
+	margin-bottom: 100px;
+	color: white;
+	background-color: #1A1A1A;
+	
+}
+
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+
+.flecha, .close {
+	mix-blend-mode: plus-lighter;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+}
+
+#fondo-galeria {
+	background-color: black;
+	opacity: 0.9;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+}
+
+#foto-1-gorrion {
+	background-image: url("img/hobbie-1.jpg");
+}
+
+#foto-3-teyu {
+	background-image: url("img/hobbie-7.jpg")
+}
+
+#foto-2-lechuza {
+	background-image:url("img/hobbie-11.jpg");
+}
+
+/*----MEDIAS-----*/
+
+@media screen and (max-width: 1440px) {
+	#galeria-oculta {
+		max-width: 1024px;
+	}
+	
+	.fraccion-galeria {
+		min-width: 1024px;
+	}
+	
+	.close {
+		top: 50px;
+		right: 15%
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#galeria-oculta {
+		max-width: 600px;
+	}
+	
+	.fraccion-galeria {
+		min-width: 600px;
+	}
+	
+	.close {
+		top: 50px;
+		right: 5%
+	}
+}
+@media screen and (max-width: 600px) {
+	#galeria-oculta {
+		max-width: 400px;
+	}
+	
+	.fraccion-galeria {
+		min-width: 400px;
+	}
+	
+	.close {
+		top: 50px;
+		right: 5%
+	}
+	
+	footer{
+		position: static;
+	}
+	
+	#miniaturas {
+		margin: 50px 0 50px 0; 
+	}
+	
+}
